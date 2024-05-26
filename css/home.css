@@ -1,0 +1,55 @@
+/* header */
+.fnt-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+.fnt-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+section h2{
+  font-family: 'Dongle', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-weight: 800;
+  text-align: center;
+}
+.why-us-card {
+  background: linear-gradient(90.08deg,#c90063 37.62%,#ff3838 84.8%);
+  padding-top: 2.5rem!important;
+  border-radius: 20px;
+}
+.section-how-to-apply-body{
+  background-image: url("../img/black-employee.webp");
+  padding: 3%;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    header h1 {
+      font-size: 5rem;
+      color: brown;
+    }
+    header p {
+      font-size: 1rem;
+    }
+    header img {
+        height: 80px;
+        width: 80px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 3rem;
+      }
+    header p {
+    font-size: 13px !important;
+    }
+    header img {
+        height: 60px;
+        width: 60px;
+    }
+    .intro-img {
+      content: url("../img/IMG_0188_sM.jpg");
+    }
+  }
