@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bytebase Technologies - software and branding company in Uganda">
+  <meta name="theme-color" content="rgba(255, 11, 24, .6)">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="rgba(255, 11, 24, .6)">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="rgba(233, 11, 2, .6)">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Bytebase Technologies - Website Design, Mobile App & Custom Software Development, Branding">
+  <link rel="icon" sizes="192x192" href="https://firebasestorage.googleapis.com/v0/b/loyola-wau.appspot.com/o/LOGO-LIC.png?alt=media&token=c55d2782-4d07-469c-ac21-19bf23c20de7">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://firebasestorage.googleapis.com/v0/b/loyola-wau.appspot.com/o/LOGO-LIC.png?alt=media&token=c55d2782-4d07-469c-ac21-19bf23c20de7">
+
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- fontawesome icons -->
+  <script src="https://kit.fontawesome.com/e1d9cf067a.js" crossorigin="anonymous"></script>
+
+  <title>Online Registration - Loyola ICT Center, Computer School in Jebel Kheir, Wau - Online Registration</title>
+
+  <!-- google fonts Dongle, IBM Plex, Montserrat, Roboto - tesla -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Montserrat:wght@500;600;100&family=Roboto&display=swap" rel="stylesheet">
+  <!-- oswald font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="bg-light text-dark py-3">
+    <div class="container text-center ">
+      <!-- https://firebasestorage.googleapis.com/v0/b/loyola-wau.appspot.com/o/LOGO-LIC.png?alt=media&token=c55d2782-4d07-469c-ac21-19bf23c20de7 -->
+      <h1 class="fnt-oswald"><img src="https://firebasestorage.googleapis.com/v0/b/loyola-wau.appspot.com/o/LOGO-LIC.png?alt=media&token=c55d2782-4d07-469c-ac21-19bf23c20de7" />
+        Loyola ICT Center - Wau
+      </h1>
+      <!-- <p class="">Computer School in Jebel Kheir, Wau, South Sudan</p> -->
+      <p class="mt-2 fnt-montserrat fw-light">A leading provider of quality education in the field of ICT</p>
+      <div class="mt-2">
+        <a href="contact_us.html" class="ms-4 btn btn-sm btn-success align-center">Make Inquiry</a>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger mb-5">
+    <div class="container">
+      <a class="navbar-brand fnt-oswald" href="index.html"><img src="img/LOGO-LIC.png" class="nav-logo d-none" alt="logo" />LIC Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="about_us.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faculty">Faculty</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#success-stories">Success Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="studentportal/login.html">Student Portal</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container mt-5 fnt-montserrat">
+
+    <h2>Online Application Form</h2>
+
+    <form action="" class="bg-light p-3">
+      <div class="row">
+        <div class="col-sm-3 ">
+          <img src="img/imgg.jpg" id="show_uPic" class="img-thumbnail w-100" alt="user picture">
+          <div class="mb-3">
+            <input class="form-control" type="file" id="user_pic" onchange="PreviewImage();">
+            <script type="text/javascript">
+
+              function PreviewImage() {
+                var oFReader = new FileReader();
+                oFReader.readAsDataURL(document.getElementById("user_pic").files[0]);
+
+                oFReader.onload = function (oFREvent) {
+                  document.getElementById("show_uPic").src = oFREvent.target.result;
+                };
+              };
+
+            </script>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-4 mb-3">
+              <label for="name" class="form-label">First Name&#42;</label>
+              <input type="text" class="form-control" id="first_name" placeholder="First Name" required>
+            </div>
+            <div class="col-sm-4 mb-3">
+              <label for="name" class="form-label">Middle Name&#42;</label>
+              <input type="text" class="form-control" id="middle_name" placeholder="Second Name" required>
+            </div>
+            <div class="col-sm-4 mb-3">
+              <label for="name" class="form-label">Last Name&#42;</label>
+              <input type="text" class="form-control" id="last_name" placeholder="Last Name" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto mb-3">
+              <label for="gender" class="form-label">Gender</label>
+              <select class="form-select" id="gender" aria-label=".form-select-sm" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <label for="dob" class="form-label">Date of Birth</label>
+              <input type="date" class="form-control" id="dob" required>
+            </div>
+            <div class="col-md-6 col-sm-12 mb-3">
+              <label for="address" class="form-label">Home Address</label>
+              <input type="text" class="form-control" id="address" placeholder="Home area" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 mb-3">
+              <label for="nationality" class="form-label">Nationality&#42;</label>
+              <input type="text" class="form-control" id="nationality" placeholder="Nationality e.g. South Sudanese"
+                required>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="phone" class="form-label">Phone / Parent's Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Phone / Parent's Number" required>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="parent" class="form-label">Name of parent / guardian: </label>
+              <input type="text" class="form-control" id="parent" placeholder="Name of parent /guardian" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="course" class="form-label">Course applying for</label>
+              <select class="form-select" id="course" aria-label=".form-select-sm example" required>
+                <option value="1">Graphic Design Masterclass - S4 finalists</option>
+                <option value="2">Web Design Bootcamp - S4 finalists</option>
+                <option value="3">Certificate in Computer Applications (CCA)</option>
+                <option value="4">Certificate in Graphic Design (CGD)</option>
+                <option value="5">Motion Graphics & Video Editing (CMGV)</option>
+                <option value="6">Certificate in Database & Data Analysis (CDDA)</option>
+                <option value="7">Certificate in Web Design & Development (CWDD)</option>
+                <option value="8">Certificate in Advanced Database Management (CDABM)</option>
+              </select>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div>
+                <label for="study_session" class="form-label">Choose favorable Study Session:</label>
+              </div>
+              <div class="form-check form-check-inline" id="study_session">
+                <input class="form-check-input" type="radio" name="study_session" id="morning_session">
+                <label class="form-check-label" for="morning_session">Morning</label>
+              </div>
+              <div class="form-check form-check-inline" id="study_session">
+                <input class="form-check-input" type="radio" name="study_session" id="afternoon_session" checked>
+                <label class="form-check-label" for="afternoon_session">Afternoon</label>
+              </div><!-- end no -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="declaration" id="declaration">
+              <label class="form-check-label" for="declaration">Declaration: I here by declare that the information
+                supplied in this application and documentation supporting it is correct and complete
+                to the best of my knowledge. I therefore undertake to pay all installment in time offered as per norms
+                of Loyola ICT Center
+                and I am aware that the fees once paid are not refundable under any circumstances. I here under sign in
+                affirmation to the
+                above and to the rules and relations printed overleaf, which I have read, understood and agreed.
+              </label>
+            </div>
+            <div class="col-auto d-none">
+              <label for="submission_date" class="form-label">Date</label>
+              <input type="date" class="form-control" id="submission_date" required>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 text-center">
+              <button type="submit" class="btn w-auto btn-danger px-5 text-uppercase" id="submitForm" disabled>Submit
+                Form</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="container-fluid px-5 p-4 bg-dark text-light sticky-bottom">
+    <div class="row">
+      <div class="col-md-3 mt-4 text-center">
+        <a href="index.html"><img src="img/LOGO-LIC.png" class="img-fluid rounded-circle w-50" alt="logo" /></a>
+
+        <div class=" mt-4 fw-bold text-uppercase">Follow us</div>
+        <div class="row mt-2 justify-content-center">
+          <div class="col-auto"><a href="https://www.fb.com/loyolaictcenter"><i class="bi-facebook me-1 fs-3"></i></a>
+          </div>
+          <div class="col-auto"><a href="https://www.instagram.com/loyolaictcenter"><i
+                class="bi-instagram me-1 fs-3"></i></a></div>
+          <div class="col-auto"><a href="https://www.twitter.com/loyolaictcenter"><i
+                class="bi-twitter me-1 fs-3"></i></a></div>
+          <div class="col-auto"><a href="https://www.youtube.com/loyolaictcenter"><i
+                class="bi-youtube me-1 fs-3"></i></a></div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mt-4 text-start">
+        <div class="fw-bold text-uppercase">Quick Links</div>
+        <div class="mt-3"><a class="text-decoration-none footer-link text-white" href="about.html"><i
+              class="bi-chevron-double-right"></i> About</a></div>
+        <div><a class="text-decoration-none footer-link text-white" href="courses.html"><i
+              class="bi-chevron-double-right"></i> Courses</a></div>
+        <div><a class="text-decoration-none footer-link text-white" href="blog.html"><i
+              class="bi-chevron-double-right"></i> Blog</a></div>
+        <div><a class="text-decoration-none footer-link text-white" href="contact.html"><i
+              class="bi-chevron-double-right"></i> Contact</a></div>
+        <div><a class="text-decoration-none footer-link text-white" href="events.html"><i
+              class="bi-chevron-double-right"></i> Events</a></div>
+        <div><a class="text-decoration-none footer-link text-white" href="onlineregistration.html"><i
+              class="bi-chevron-double-right"></i> Register online</a></div>
+        <div><a class="text-decoration-none footer-link text-white" href="gallery.html"><i
+              class="bi-chevron-double-right"></i> Gallery</a></div>
+      </div>
+
+      <div class="col-md-3 mt-4 text-start">
+        <div class="fw-bold text-uppercase">Other Links / Services</div>
+        <div class=" mt-3"><a class="text-decoration-none footer-link text-white" href=""><i
+              class="bi-chevron-double-right"></i> Become a Sponsnor</a></div>
+        <div><a class="text-decoration-none  footer-link text-white" href=""><i class="bi-chevron-double-right"></i>
+            Join our Partners</a></div>
+        <div><a class="text-decoration-none  footer-link text-white" href=""><i class="bi-chevron-double-right"></i>
+            Printing & Design</a></div>
+        <div><a class="text-decoration-none  footer-link text-white" href=""><i class="bi-chevron-double-right"></i>
+            Computer Repair & Maintanance</a></div>
+        <div><a class="text-decoration-none  footer-link text-white" href=""><i class="bi-chevron-double-right"></i> Web
+            & System Design</a></div>
+        <div><a class="text-decoration-none  footer-link text-white" href=""><i class="bi-chevron-double-right"></i>
+            Software Installations</a></div>
+        <div><a class="text-decoration-none  footer-link text-white" href=""><i class="bi-chevron-double-right"></i>
+            Social Media Management</a></div>
+      </div>
+
+      <div class="col-md-3 mt-4 text-start">
+        <div class="fw-bold text-uppercase">Talk To Us</div>
+        <div class=" mt-3"><a class="text-decoration-none footer-link text-white" href=""><i class="bi-telephone"></i>
+            +211-921225286</a></div>
+        <div><a class="text-decoration-none footer-link text-white" href=""><i class="bi-telephone"></i>
+            +211-917690288</a></div>
+        <div><a class="text-decoration-none footer-link text-white" href=""><i class="bi-envelope"></i>
+            loyolaictcenter@gmail.com</a></div>
+        <div><a class="text-decoration-none footer-link text-white" href=""><i class="bi-envelope"></i>
+            principal.lss@jesuits.net</a></div>
+        <div><a class="text-decoration-none footer-link text-white" href=""><i class="bi-house"></i> Jebel Kheir,
+            P.O.BOX 2 Wau, South Sudan</a></div>
+      </div>
+
+    </div>
+
+    <hr class="mt-4">
+
+    <div class="text-center fw-lighter">&copy; Copyright Loyola ICT Center
+      <script>document.write(new Date().getFullYear())</script>. All Rights Reserved
+    </div>
+    <div class="text-center fs-6 fst-italic fw-lighter">loyolaictcenter@gmail.com | 0921225286</div>
+
+  </footer>
+
+  <!-- firebase initialisation -->
+  <script type="module"  src="js/firebase_init.js"></script>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- swipper js for slide shows -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- slider -->
+  <script src="js/slider.js"></script>
+  <!-- custom script -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

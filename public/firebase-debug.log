@@ -1,0 +1,29 @@
+[debug] [2023-06-30T10:26:31.148Z] ----------------------------------------------------------------------
+[debug] [2023-06-30T10:26:31.152Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-06-30T10:26:31.153Z] CLI Version:   11.25.3
+[debug] [2023-06-30T10:26:31.153Z] Platform:      win32
+[debug] [2023-06-30T10:26:31.154Z] Node Version:  v16.14.2
+[debug] [2023-06-30T10:26:31.155Z] Time:          Fri Jun 30 2023 12:26:31 GMT+0200 (Central Africa Time)
+[debug] [2023-06-30T10:26:31.156Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-30T10:26:31.251Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-30T10:26:31.252Z] > authorizing via signed-in user (adamssemakula@gmail.com)
+[debug] [2023-06-30T10:26:31.252Z] [iam] checking project loyola-wau for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2023-06-30T10:26:31.254Z] > refreshing access token with scopes: []
+[debug] [2023-06-30T10:26:31.256Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-30T10:26:31.256Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-30T10:26:37.364Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-06-30T10:26:37.364Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-30T10:26:37.388Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/loyola-wau:testIamPermissions [none]
+[debug] [2023-06-30T10:26:37.388Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/loyola-wau:testIamPermissions x-goog-quota-user=projects/loyola-wau
+[debug] [2023-06-30T10:26:37.389Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/loyola-wau:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-06-30T10:26:40.949Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/loyola-wau:testIamPermissions 200
+[debug] [2023-06-30T10:26:40.950Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/loyola-wau:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-06-30T10:26:40.952Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/loyola-wau [none]
+[debug] [2023-06-30T10:26:53.034Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/loyola-wau
+[debug] [2023-06-30T10:26:58.047Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
